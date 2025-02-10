@@ -510,6 +510,12 @@ tbody{
 
 
 @media(max-width: 900px){
+    body{
+        overflow-y: hidden;
+    }
+    .main-container{
+        overflow-y: hidden;
+    }
     .dashboard{
         position: absolute;
         left: -14rem;
