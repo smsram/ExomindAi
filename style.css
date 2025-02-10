@@ -4,9 +4,9 @@
     margin: 0;
 }
 body{
-    display: flex;
+    /*display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
     overflow-x: hidden;
     overflow-y: hidden;
     font-family: "Outfit", serif;
