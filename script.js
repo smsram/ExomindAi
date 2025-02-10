@@ -134,13 +134,15 @@ function logout() {
 }*/
 
 
-// Redirect to login page if no username is found in local storage
-window.onload = async function() {
+// Redirect to login page once if no username is found in local storage
+window.onload = function() {
   const username = localStorage.getItem('username');
   if (!username) {
-    window.location.href = 'login.html';
+    if (!window.location.href.includes('login.html')) {
+      window.location.href = 'login.html';
+    }
   } else {
-    await fetchUserName();
+    fetchUserName();
   }
 };
 
