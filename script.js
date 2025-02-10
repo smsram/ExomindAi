@@ -26,7 +26,7 @@ function signup() {
   const phone = document.getElementById('signup-phone').value;
   const email = document.getElementById('signup-email').value;
   const password = document.getElementById('signup-password').value;
-  const profileImageUrl = document.getElementById('signup-profile-image-url').value;
+  const profileImageUrl = "https://drive.google.com/uc?id=1W2q-z1ycj3lLitAFIFiiGHnEfDHrvatn&export=download";
 
   fetch('https://web-production-9545.up.railway.app/signup', {
       method: 'POST',
