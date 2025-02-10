@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <section class="main">
+    <div class="main-container">
+      <div class="dashboard">
+        <div class="user-details">
+          <div class="user-details-basic">
+            <iframe src="" width="40" height="40" id="user-profile"></iframe>
+            <p id="user-name"></p>
+          </div>
+          <i class='bx bx-menu-alt-left menu-icon'></i>
+          <div class="user-details-more">
+            <p id="name"></p>
+            <div class="upload-user-profile">
+              <input type="file" id="fileInput">
+              <label for="fileInput">Upload Profile</label>
+              <button id="profile-upload-btn" type="button">Upload</button>
+              <div id="result"></div>
+            </div>
+            <div class="settings">
+              <i class='bx bxs-cog'></i>
+              <p>Settings</p>
+            </div>
+            <div class="logout">
+              <i class='bx bx-exit'></i>
+              <p onclick="logout()">Logout</p>
+            </div>
+          </div>
+        </div>
+        <div class="new-chat">
+          <p class="temp-chat">Temp Chat</p>
+          <i class='bx bxs-trash' id="reset-temp-chat"></i>
+        </div>
+        <div class="chats-history">
+          <div class="chats">
+            <div class="chat-title">
+              Your Chat
+              <div class="delete-chat"><i class='bx bxs-trash'></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="exomind-txt">
+          <h1>ExoMind Ai</h1>
+          <img src="ExoMind-Ai.png" alt="ExoMind Ai">
+        </div>
+      </div>
+      <div class="chat-container">
+        <div class="messages-container"></div>
+        <div class="user-prompt-container">
+          <textarea name="Input" id="user-input" placeholder="Message ExoMind"></textarea>
+          <div class="user-options-input">
+            <i class='bx bxs-image-alt'></i>
+            <button type="submit" id="user-submit"><i class='bx bx-up-arrow-alt'></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="chat.js"></script>
+  <script src="popups.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
