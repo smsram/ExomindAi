@@ -517,10 +517,13 @@ tbody{
     .main-container{
         overflow-y: hidden;
         overflow-x: hidden;
+        width: 100%;
+        height: 100%;
     }
     .dashboard{
         position: absolute;
         left: -14rem;
+        top: 0;
     }
     .menu-icon{
         position: absolute;
