@@ -285,8 +285,8 @@ body{
 }
 /* User Input */
 .user-prompt-container{
-    width: calc(20% - 0.4rem);
-    height: 6rem;
+    width: calc(80% - 0.4rem);
+    height: 18%;
     background-color: var(--pop-clr);
     position: relative;
     border-radius: 20px;
