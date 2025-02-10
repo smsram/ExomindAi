@@ -4,9 +4,107 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Vinyl&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.5s ease;
+}
+
+:root{
+    --bg-clr: black;
+    --bg2-clr: 
+    rgba(39,40,34,255);
+    --dashboard-bg-clr: rgb(36, 35, 37);
+    --chat-container-clr: #2c2b2e;
+    --pop-clr: rgb(71, 71, 71);
+    --main-clr: #8a2be2;
+    --main-hover-clr: #7332af;
+    --txt-clr: white;
+}
+section{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg2-clr);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--txt-clr);
+  background-color: var(--pop-clr);
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+.container .headding{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .headding img{
+  width: 4rem;
+}
+form{
+  max-width: 100%;
+  height: auto;
+}
+form button{
+  font-family: "Outfit", serif;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: var(--main-clr);
+  color: var(--txt-clr);
+  padding: 0.4rem;
+  border-radius: 6px;
+  transition: 0.5s ease;
+}
+form input{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--main-clr);
+  color: var(--txt-clr);
+  font-family: "Outfit", serif;
+}
+form button:hover{
+  background-color: var(--main-hover-clr);
+}
+p{
+  margin-top: 0.8rem;
+}
+a{
+  color: var(--main-clr);
+  text-decoration: none;
+}
+a:hover{
+  color: var(--main-hover-clr);
+}
+  </style>
 </head>
 <body>
-  <h2>Login</h2>
+  <section>
+    <div class="container">
+      <div class="headding">
+        <h2>Login</h2>
+        <img src="ExoMind-Ai.png" alt="ExoMind Ai">
+      </div>
   <form onsubmit="event.preventDefault(); login();">
     <label for="login-username">Username:</label>
     <input type="text" id="login-username" required><br><br>
@@ -15,6 +113,8 @@
     <button type="submit">Login</button>
   </form>
   <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
