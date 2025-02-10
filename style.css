@@ -520,13 +520,15 @@ tbody{
         overflow-y: hidden;
     }
     .main-container{
-        min-height: 100%;
-        overflow-y: hidden;
+        height: 100%;
+        overflow-y: auto;
     }
     .dashboard{
         position: absolute;
+        top: 0;
         left: -14rem;
         width: 12rem;
+        height: 100%;
     }
     .menu-icon{
         position: absolute;
