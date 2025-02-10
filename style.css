@@ -45,7 +45,7 @@ body{
 
 /* Dashboard */
 .dashboard{
-    min-width: 12rem;
+    width: 20%;
     height: 100%;
     background-color: var(--dashboard-bg-clr);
     padding: 1rem;
@@ -267,7 +267,7 @@ body{
 
 /* Chat Messages */
 .chat-container{
-    width: 100%;
+    width: 80%;
     height: 100%;
     background-color: var(--chat-container-clr);
     display: flex;
@@ -278,14 +278,14 @@ body{
 /* Messages Container */
 .messages-container{
     width: 100%;
-    height: 80%;
+    height: 100%;
     border-radius: 10px;
     overflow-y: auto;
     overflow-x: hidden;
 }
 /* User Input */
 .user-prompt-container{
-    width: calc(80% - 0.4rem);
+    width: 80%;
     height: 6rem;
     background-color: var(--pop-clr);
     position: relative;
@@ -295,6 +295,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 0.4rem;
+    margin-bottom: 0.8rem;
 }
 #user-input{
     width: calc(100% - 1.4rem);
@@ -517,18 +518,14 @@ tbody{
     }
     body{
         overflow-y: hidden;
-        overflow-x: hidden;
     }
     .main-container{
         overflow-y: hidden;
-        overflow-x: hidden;
-        width: 100%;
-        height: 100%;
     }
     .dashboard{
         position: absolute;
         left: -14rem;
-        top: 0;
+        width: 12rem;
     }
     .menu-icon{
         position: absolute;
@@ -540,28 +537,9 @@ tbody{
     .message {
         width: fit-content;
         max-width: 80%;
-      }
+    }
     .chat-container{
         width: 100%;
         height: 100%;
     }
-    .messages-container{
-        width: 100%;
-        height: 80%;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
-    .user-prompt-container{
-    width: calc(80% - 0.4rem);
-    height: 6rem;
-    background-color: var(--pop-clr);
-    position: relative;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0.4rem;
-    margin-bottom: 1.8rem;
-}
 }
