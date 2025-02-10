@@ -527,4 +527,8 @@ tbody{
         cursor: pointer;
         width: 2rem;
     }
+    .message {
+        width: fit-content;
+        max-width: 80%;
+      }
 }
