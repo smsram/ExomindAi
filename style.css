@@ -520,7 +520,7 @@ tbody{
         overflow-y: hidden;
     }
     .main-container{
-        max-height: 100%;
+        min-height: 100%;
         overflow-y: hidden;
     }
     .dashboard{
