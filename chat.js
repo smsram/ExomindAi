@@ -42,6 +42,7 @@ deleteChatButton.addEventListener('click', async () => {
       if (data.success) {
         alert('Chat deleted successfully.');
         messagesContainer.innerHTML = ''; // Clear chat UI
+        storedMessages = []; // Clear the storedMessages array
       } else {
         alert(`Failed to delete chat: ${data.message}`);
       }
