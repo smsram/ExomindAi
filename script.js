@@ -137,8 +137,10 @@ function logout() {
 // Redirect to login page once if no username is found in local storage
 window.onload = function() {
   const username = localStorage.getItem('username');
+  const currentPage = window.location.href;
+
   if (!username) {
-    if (!window.location.href.includes('login.html')) {
+    if (!currentPage.includes('login.html') && !currentPage.includes('signup.html')) {
       window.location.href = 'login.html';
     }
   } else {
