@@ -82,7 +82,7 @@ submitButton.addEventListener('click', async () => {
 
   try {
     // Send message to the Flask bot server with conversation history
-    const response = await fetch('https://flaskapp1-railway-production.up.railway.app/chat', {
+    const response = await fetch('https://505ccc3e-e9a5-4201-8ae0-ef6b92062e1d-00-3aaelwai0pq2v.sisko.replit.dev/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ message: tempChatMode ? [userMessage] : storedMessages }), // Include only the current message in temp mode
